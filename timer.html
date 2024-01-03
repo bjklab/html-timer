@@ -62,6 +62,10 @@
         }
       }
       
+      function newTimer() {
+        const timer = new Timer();
+      }
+
       const timer = new Timer();
       timer.start();
       setInterval(() => {
@@ -83,7 +87,7 @@
 <p>Elapsed seconds: <span id="time">0</span>s</p>
 <p>Elapsed minutes: <span id="minutes">0</span>min</p>
 <p>Elapsed seconds from last minute: <span id="minsec">0</span>s</p>
-<button type="button" onclick="Timer()">Reset Timer</button>
+<button type="button" onclick="newTimer()">Reset Timer</button>
 
 </body>
 </html>
