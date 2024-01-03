@@ -73,7 +73,7 @@
         document.getElementById('minutes').innerText = timeInMinutes;
       }, 100)
       setInterval(() => {
-        const timeInMinSec = Math.floor(timer.getTime() / 1000 % 60);
+        const timeInMinSec = Math.round(timer.getTime() / 1000 % 60);
         document.getElementById('minsec').innerText = timeInMinSec;
       }, 100)
 </script>
