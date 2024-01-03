@@ -72,12 +72,17 @@
         const timeInMinutes = Math.floor(timer.getTime() / 1000 / 60);
         document.getElementById('minutes').innerText = timeInMinutes;
       }, 100)
+      setInterval(() => {
+        const timeInMinSec = Math.floor(timer.getTime() / 1000 % 60);
+        document.getElementById('minsec').innerText = timeInMinSec;
+      }, 100)
 </script>
 </head>
 <body>
 <h2>Javascript Timer</h2>
 <p>Elapsed time (seconds): <span id="time">0</span>s</p>
 <p>Elapsed time (minutes): <span id="minutes">0</span>min</p>
+<p>Elapsed time (combined): <span id="minutes">0</span>min <span id="minsec">0</span>s</p>
 
 </body>
 </html>
