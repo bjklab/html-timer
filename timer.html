@@ -69,7 +69,7 @@
         document.getElementById('time').innerText = timeInSeconds;
       }, 100)
       setInterval(() => {
-        const timeInMinutes = Math.round(timer.getTime() / 1000 / 60);
+        const timeInMinutes = Math.floor(timer.getTime() / 1000 / 60);
         document.getElementById('minutes').innerText = timeInMinutes;
       }, 100)
 </script>
